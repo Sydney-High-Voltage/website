@@ -1,0 +1,107 @@
+/* Reset margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full page background with an image option */
+body {
+  background-image: url('seamless-high-voltage-pattern-yellow-background-lightning-flat-design-vector_114482-880.avif');
+  /* Replace 'background.jpg' with your image path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* Keeps the image fixed when scrolling */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Container panel styling */
+.container {
+  background-color: #98b5f8;
+  /* Light yellow color */
+  padding: 40px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Circular logo image with blue outline */
+.logo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+
+  /* Blue outline */
+  margin: 0 auto 20px;
+  display: block;
+}
+
+/* Button styling */
+.button {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  font-size: 18px;
+  color: rgb(19, 18, 18);
+  background-color: #85d2aa;
+  /* Blue color for all buttons */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  /* Default shadow */
+  transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+.button:hover {
+  background-color: #6daa8a;
+  /* Darker blue on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  /* Larger shadow on hover */
+  transform: translateY(-2px);
+  /* Slight lift effect */
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  .logo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .button {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background-size: 150%;
+    /* Zoom in the image slightly on smaller screens */
+    background-position: center top;
+    /* Keep the top center of the image visible */
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background-size: 200%;
+    /* Zoom in more on very small screens */
+    background-position: center top;
+    /* Adjust to keep image focus area visible */
+  }
+}
